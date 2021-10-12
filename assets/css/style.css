@@ -315,6 +315,10 @@ body {
     margin-top: 70px; 
 }
 
+.products--title {
+    margin-top: 20px;
+}
+
 .section-heading{
     margin-top: 20px;
 }
@@ -339,7 +343,6 @@ body {
     border: 1px solid rgb(238, 238, 238);
     margin-bottom: 30px;
     margin-top: 30px;
-
 }
 
 .product-item .down-content {
@@ -383,11 +386,6 @@ body {
     margin-bottom: 20px;
 }
 
-.stars {
-    margin-bottom: 8px;
-
-}
-
 .product-item .down-content ul li {
     display: inline-block;
 }
@@ -398,6 +396,95 @@ body {
 }
 
 .product-item .down-content span {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+    color: #3A3A3A;
+    font-weight: 500;
+}
+
+.inspiration-item {
+    /* border: 1px solid rgb(238, 238, 238); */
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.latest-inspirations {
+    background-color:#E89F71 ;
+}
+
+.latest-inspirations .section-heading a {
+    float: right;
+    margin-top: -35px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+
+
+.inspirations {
+    margin: auto; 
+}
+
+
+.inspiration-item .down-content {
+    padding: 15px;
+    position: relative;
+    background: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+}
+
+.inspiration-item img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inspiration-item a{
+    text-decoration : none; 
+}
+
+.inspiration-item .down-content h4 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Khula', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+
+    color: #3A3A3A;
+}
+
+.inspiration-item .down-content h6 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 18px;
+    color: #121212;
+}
+
+.inspiration-item .down-content p {
+    margin-bottom: 20px;
+}
+
+.stars {
+    margin-bottom: 8px;
+
+}
+
+.inspiration-item .down-content ul li {
+    display: inline-block;
+}
+
+.inspiration-item .down-content ul li i {
+    color: #3A3A3A;
+    font-size: 14px;
+}
+
+.inspiration-item .down-content span {
     position: absolute;
     right: 30px;
     bottom: 30px;
