@@ -1,14 +1,13 @@
-const productsList = {
+const productsItems = {
 
     init: function () {
-        // productsList.bindAllProductsEvents();
-        productsList.loadProductsForHomeFromAPI();
+        productsItems.loadProductsForPageFromAPI;
     },
 
-    loadProductsForHomeFromAPI: function () {
+    loadProductsForPageFromAPI: function () {
 
         // On déclenche la requête HTTP (via le moteur sous-jacent Ajax)
-        fetch(app.apiRootUrl + '/')
+        fetch(app.apiRootUrl + '/products')
             // Ensuite, lorsqu'on reçoit la réponse au format JSON
             .then(function (response) {
                 // On convertit cette réponse en un objet JS et on le retourne
@@ -20,15 +19,13 @@ const productsList = {
                 console.log(data);
 
                 for (const productData of data) {
-
-                    product.listProductHome(productData.name, productData.price, productData.description, productData.picture);
+                    product.listProductHome(productData.name, productData.price, productData.description);
 
                 }
 
             });
 
-    },
-
+    }
 
 
 }

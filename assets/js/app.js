@@ -11,6 +11,8 @@ const app = {
 
         // On appelle les composants
 
+        productsItems.init(); 
+
         productsList.init();
 
 
