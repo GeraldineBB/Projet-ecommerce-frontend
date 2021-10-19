@@ -8,6 +8,8 @@
 
     <script defer src="assets/js/app.js"></script>
     <script defer src="assets/js/components/productsList.js"></script>
+    <script defer src="assets/js/components/product.js"></script>
+
 
     <script src="https://kit.fontawesome.com/63571673b4.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
@@ -73,9 +75,13 @@
         <div class="intro--aside">
             <div class="intro--title">Des produits de qualité juste pour vous</div>
             <div class="intro--subtitle">Nous sélectionnons pour vous les meilleurs artisans français</div>
+
+            <a href="products.html">
             <div class="intro--button">
-                <div class="intro--button-text">Je découvre les produits</div>
+                    <div class="intro--button-text">Je découvre les produits</div>
             </div>
+            </a>
+
         </div>
 
 
@@ -122,83 +128,32 @@
 
             <div class="latest-products">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="itemHome">
                         <div class="col-md-12">
                             <div class="section-heading">
                                 <h2 class="products--title d-flex justify-content-center">Nos derniers produits</h2>
                             </div>
                         </div>
 
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <a href="#"><img src="assets/images/produit1-table.png" alt=""></a>
-                                <div class="down-content">
-                                    <a href="#">
-                                        <h4>Nom du produit</h4>
-                                    </a>
+                        <template id="productsHome">
+                            <div class="col-md-3">
+                                <div class="product-item">
+                                    <a href="#"><img src="assets/images/produit1-table.png" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="#">
+                                            <h4>Nom du produit</h4>
+                                        </a>
 
-                                    <h6>30€</h6>
+                                        <h6>30€</h6>
 
-                                    <p>Description produit</p>
-                                    <!-- <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul> -->
+                                        <p>Description produit</p>
+
+                                    </div>
                                 </div>
+
                             </div>
 
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <a href="#"><img src="assets/images/produit1-table.png" alt=""></a>
-                                <div class="down-content">
-                                    <a href="#">
-                                        <h4>Nom du produit</h4>
-                                    </a>
-
-                                    <h6>30€</h6>
-
-                                    <p>Description produit</p>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <a href="#"><img src="assets/images/produit1-table.png" alt=""></a>
-                                <div class="down-content">
-                                    <a href="#">
-                                        <h4>Nom du produit</h4>
-                                    </a>
-
-                                    <h6>30€</h6>
-
-                                    <p>Description produit</p>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <a href="#"><img src="assets/images/produit1-table.png" alt=""></a>
-                                <div class="down-content">
-                                    <a href="#">
-                                        <h4>Nom du produit</h4>
-                                    </a>
-
-                                    <h6>30€</h6>
-
-                                    <p>Description produit</p>
-
-                                </div>
-                            </div>
-
-                        </div>
+                        </template>
 
 
                         <div class="d-flex justify-content-center">
