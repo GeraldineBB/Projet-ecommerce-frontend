@@ -8,8 +8,8 @@
 
     <script defer src="assets/js/app.js"></script>
     <script defer src="assets/js/components/productsList.js"></script>
-    <script defer src="assets/js/components/productsItems.js"></script>
-
+    <!-- <script defer src="assets/js/components/productsItems.js"></script> -->
+    <script defer src="assets/js/components/brandsList.js"></script>    
     <script defer src="assets/js/components/product.js"></script>
 
 
@@ -39,19 +39,33 @@
     <div class="bc_beige2"></div>
     <div class="bc_beige1"></div>
 
-    <div class="menuNav">
+    <nav class="navbar navbar-expand-lg menuNav">
 
-        <div class="menuNav--logo">Funiro</div>
+        <div class="menuNav--logo"><a class = "menuNav--logo_decoration" href="index.html">Funiro</a></div>
 
-        <div class="menuNav--left">
+        <ul class="menuNav--left">
 
-            <div class="menuNav--button menuNav--button_brand">Les marques <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="menuNav--button menuNav--button_category"> Par catégorie <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="menuNav--button menuNav--button_inspiration">Inspiration</div>
+            <a href="">
+                <li class="menuNav--button menuNav--button_brand">Les marques <i class="fas fa-chevron-down"></i>
+                </li>
+            </a>
 
-        </div>
+            <template id = "menuNav--submMenuBrand">
+                <ul>
+                    <li>Maison du monde</li>
+                </ul>
+            </template>
+
+            <a href="">
+                <li class="menuNav--button menuNav--button_category"> Par catégorie <i class="fas fa-chevron-down"></i>
+                </li>
+            </a>
+
+            <a href="">
+                <li class="menuNav--button menuNav--button_inspiration">Inspiration</li>
+            </a>
+
+        </ul>
 
         <div class="menuNav--right">
             <div class="menuNav--icon_user"><i class="fa fa-heart"></i></div>
@@ -59,11 +73,10 @@
         </div>
 
 
-    </div>
+    </nav>
+
 
     <div class="intro">
-
-
 
         <img class="intro--image_right" src="assets/images/photo-intro-gauche-3.jpg" alt="">
 
@@ -79,9 +92,9 @@
             <div class="intro--subtitle">Nous sélectionnons pour vous les meilleurs artisans français</div>
 
             <a href="products.html">
-            <div class="intro--button">
+                <div class="intro--button">
                     <div class="intro--button-text">Je découvre les produits</div>
-            </div>
+                </div>
             </a>
 
         </div>
@@ -159,7 +172,7 @@
 
 
                         <div class="d-flex justify-content-center">
-                            <button>Voir plus de produits</button>
+                            <a href="products.html"><button>Voir plus de produits</button></a>
                         </div>
 
 

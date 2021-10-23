@@ -1,10 +1,10 @@
 const productsItems = {
 
     init: function () {
-        productsItems.loadProductsForPageFromAPI;
+        productsItems.loadProductsForPageFromAPI();
     },
 
-    loadProductsForPageFromAPI: function () {
+      loadProductsForPageFromAPI: function () {
 
         // On déclenche la requête HTTP (via le moteur sous-jacent Ajax)
         fetch(app.apiRootUrl + '/products')
@@ -19,7 +19,7 @@ const productsItems = {
                 console.log(data);
 
                 for (const productData of data) {
-                    product.listProductHome(productData.name, productData.price, productData.description);
+                    product.listProductHome(productData.name, productData.price, productData.description, productData.picture);
 
                 }
 
@@ -27,5 +27,5 @@ const productsItems = {
 
     }
 
-
+   
 }

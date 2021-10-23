@@ -3,6 +3,9 @@ const productsList = {
     init: function () {
         // productsList.bindAllProductsEvents();
         productsList.loadProductsForHomeFromAPI();
+        // productsList.loadProductsForPageFromAPI(); 
+
+
     },
 
     loadProductsForHomeFromAPI: function () {
@@ -28,7 +31,6 @@ const productsList = {
             });
 
     },
-
 
 
 }

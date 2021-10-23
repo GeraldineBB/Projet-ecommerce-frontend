@@ -11,9 +11,12 @@ const app = {
 
         // On appelle les composants
 
+        productsList.init();
+
+        brandsList.init(); 
+
         productsItems.init(); 
 
-        productsList.init();
 
 
     }
